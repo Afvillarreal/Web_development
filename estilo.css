@@ -1,0 +1,134 @@
+h1{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+header h1{
+    text-align: center;  
+}
+
+h2{
+    font: bold 14px sans-serif;
+}
+
+
+body{
+   text-align: center; 
+}
+
+.agrupar{
+
+    width: 70%;
+    border: 1px #A93226;
+    margin: 100px auto;
+    background: gray; 
+
+}
+
+.cabecera{
+    background: #A93226; 
+    border: 1px solid #999999;
+    padding: 20px;
+    text-align: left;
+}
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#A93226;
+}
+
+i{
+    font-size: 50px;
+    margin:10px 30px color black;
+}
+ 
+.menu {
+    background: #ccc;
+    border: 1px solid #999999;
+    padding: 5px 15 px;
+    text-align: left;
+}
+
+h3{
+    text-align: center;
+}
+
+.menu li{
+
+    padding: 5px;
+    font: bold 14px verdana;
+    display: inline-block;
+    
+}
+
+
+article {
+
+    font-family: myPrimeraFuente;
+
+    background: #D5DBDB;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+.seccion{
+
+    margin: 30px;
+    width: 95%;
+    float: center;
+
+}
+
+.seccion h1, h2{  
+    text-align: left;
+}
+
+a{
+    color: black;
+}
+
+.columna{
+    margin: 20px 0px;  
+    width: 30%;  
+    float:left;
+}
+
+.columna blockquote{
+    border: 1px solid black;
+    padding: 40px;
+    background: #fffbb9;
+    margin-bottom: 20px;
+}
+
+.pie{
+    
+    clear: both;
+    padding: 20px;
+    background:#A93226;
+    color: solid black;
+}
+
+img {
+    width: 600px;
+    margin: 20px auto;
+}
+
+
+@font-face{
+
+    font-family: myPrimeraFuente;
+    src: url(fuentes/Vudotronic.otf);
+
+}
+
+
+
+
+
