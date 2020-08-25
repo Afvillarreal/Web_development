@@ -108,7 +108,7 @@ a{
 }
 
 .pie{
-    
+    font-family: myPrimeraFuente;
     clear: both;
     padding: 20px;
     background:#A93226;
@@ -124,7 +124,7 @@ img {
 @font-face{
 
     font-family: myPrimeraFuente;
-    src: url(fuentes/Vudotronic.otf);
+    src: url(../fuentes/Vudotronic.otf);
 
 }
 
