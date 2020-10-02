@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../estilos/estilo.css">
  
+    <link rel="stylesheet" href="../estilos/bootstrap.min.css">
 
     <link href="../css/fontawesome.min.css" rel="stylesheet">
     <link href="../css/all.min.css" rel="stylesheet">
@@ -18,7 +19,7 @@
 <body background="../images/fondo.jpg">
 
 
-    <div class ="agrupar">
+    <div class ="agrupar col-10 col-s-12">
 
         <header class="cabecera">
 
@@ -26,26 +27,50 @@
            
         </header>
     
-        <nav class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color:  #D5DBDB;" >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <a class="navbar-brand" href="../index.html">Ultimas novedades</a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-            <ul>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../paginas/Marcas.html">Marcas <span class="sr-only">(current)</span></a>
+                </li>
 
-                <a href="../index.html"><li> Ultimas novedades</li></a>
-                <a><li> Marcas </li></a>
-                <a href="../paginas/Videos.html"><li> Videos Destacados</li></a>
-                <a href="../paginas/lista.html"><li> Lista-top </li></a>
-                <a href="../paginas/contacto.html" ><li> contactanos</li></a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../paginas/Videos.html">Videos destacados <span class="sr-only">(current)</span></a>
+                </li>
 
-            </ul>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../paginas/lista.html">Lista-Top <span class="sr-only">(current)</span></a>  
+                </li>
 
-        </nav>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../paginas/contacto.html"> Contactos <span class="sr-only">(current)</span></a>  
+                  </li>
+
+              </ul>
+
+              <li class="form-inline my-2 my-lg-0">
+                
+                <button id="btn5" class="btn btn-dark my-2 my-sm-0" type="submit">Modo oscuro</button>
+
+              </li>
+            </div>
+          </nav>
+
+        
 
         <section class="seccion">
 
              <article>
                  
                 <h1>BMW</h1>
-                <img src="../images/bmwlogo.png"/>
+                <img id="imgcenter" class="col-4 col-s-5" src="../images/bmwlogo.png"/>
 
                 <p>BMW cuyas siglas en alemán significan “Bayerische Motoren Werke” (Fábricas bávaras de motores”) es un fabricante alemán de automóviles de gama alta y motocicletas, cuya sede central se encuentra en Múnich.
                     BMW es el líder mundial en ventas entre los fabricantes de gama alta y sus principales competidores son Audi, Volvo, Lexus y Mercedes-Benz.               
@@ -54,8 +79,8 @@
                </p>
                
 
-               <h1>RENAULT</h1>
-                <img src="../images/Renaultlogo.png"/>
+               <h1 >RENAULT</h1>
+                <img id="imgcenter"  class="col-5 col-s-5" src="../images/Renaultlogo.png"/>
                 <p>
                     Nacido en 1877, fue el cuarto de los 6 hermanos de un rico comerciante
                     de tejidos parisiense; la afición por la mecánica en general y por los
@@ -73,13 +98,22 @@
 
         <h3>dejanos tus datos y te asesoramos</h1>
                
-        <form>
-            <label for="primernombre">nombre:</label><br>
-            <input type="text" id="nombre" name="primernombre"><br>
-            <label for="numero">numero:</label><br>
-            <input type="text" id="numero" name="lname">
+          <form id="bajo" class="form-inline">
+            <div class="form-group mb-2">
+              <label for="staticEmail2" class="sr-only">Email</label>
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Ingrese sus datos">
+            </div>
 
-            <input type="submit" value="Enviar informacion" />
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" class="sr-only">Password</label>
+              <input type="text" class="form-control" id="inputPassword2" placeholder="Nombre">
+            </div>
+
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" class="sr-only">Password</label>
+              <input type="text" class="form-control" id="inputPassword2" placeholder="Numero telefonico">
+            </div>
+            <button type="button" class="btn btn-dark">Enviar informacion</button>
           </form>
           
      </article>
@@ -90,7 +124,7 @@
     
         
     
-        <footer class="pie">
+        <footer class="pie col-12">
             Desarrollado por felipe villarreal.
             <a href="https://facebook.com" ><i class="fab fa-facebook" ></i></a>
             <a href="https://github.com/Afvillarreal" ><i class="fab fa-github"></i></a>
@@ -98,6 +132,10 @@
         </footer>
     </div>
  
+    <script src = "../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/funcion.js"></script>
+    <script src = "../js/popper.min.js" ></script>
+    <script src="../js/bootstrap.min.js"></script>
 
 </body>
 </html>
